@@ -4,12 +4,13 @@
 <p>Por ser um microprojeto focado no meu aprendizado, o código possui muitas anotoções comentadas, para que eu possa revisitar e continuar minhas práticas</p>
 </br>
 <p>
-#sistema pessoal para salvar minhas receitas
-
-  #sistema com interface amigável para usuário
-  #sistema com funcionalidades de adicionar, editar e excluir receitas
-  #armazenar receitas em um banco de dados
-
-  #tecnologias: Python - linguagem de programação e lógica de sistema,
-  #Tkinter: Python - library para criação de interfaces simples
-  #SQLite3: Python - banco de dados simples e leve integrado ao Python</p>
+<ul>
+  <li><strong>sistema pessoal para salvar minhas receitas</strong></li> </br>
+  <li>sistema com interface amigável para usuário</li></br>
+  <li>sistema com funcionalidades de adicionar, editar e excluir receitas</li></br>
+  <li>armazenar receitas em um banco de dados</li></br>
+  <li>tecnologias: Python - linguagem de programação e lógica de sistema</li></br>
+  <li>Tkinter: Python - library para criação de interfaces simples</li></br>
+  <li>SQLite3: Python - banco de dados simples e leve integrado ao Python</li></br>
+</ul>
+</p>
