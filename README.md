@@ -13,4 +13,15 @@
   <li>Tkinter: Python - library para criação de interfaces simples</li></br>
   <li>SQLite3: Python - banco de dados simples e leve integrado ao Python</li></br>
 </ul>
-</p>
+</p></br>
+<h2>Próximas Etapas</h2>
+</br>
+<p>O que planejo desenvolver futuramente</p></br>
+<p>
+<ol>
+  <li>Refazer em Inglês</li></br>
+  <li>Melhorar interface gráfica</li></br>
+  <li>Otimizar e melhorar o desempenho e usabilidade do projeto</li></br>
+  <li>possibilitar análise de quais receitas mais utilizadas e menos utilizadas</li></br>
+  <li>inserção de imagens e vídeos</li></br>
+</ol></p>
