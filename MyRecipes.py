@@ -26,3 +26,13 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS recipes
                 ingredients TEXT,
                 prepare TEXT)''')
 conn.commit()
+
+#interaction with the databank
+
+def show_recipes():
+  recipes_list.delete(0, tk.END)
+  cursor.execute("SELECT * FROM recipes")
+  results = cursor.fetchall()
+  ordered_recipes = sorted (results, key = lambda x: x[1])
+  for receipes in ordered_receipes:
+      recipes_list.insert(tk.END, f"{recipe [1]}")
