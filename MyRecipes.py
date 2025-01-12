@@ -52,4 +52,12 @@ def add_recipes():
   cursor.execute("INSERT INTO recipes (dish_name, origin, type, time_hours, reference, rate, ingredients, preparation) VALUES (?,?,?,?,?,?,?,?)",
                   (dish_name, origin, type, time_hours, reference, rate, ingredients, preparation))
   conn.commit()
-  show_recipes
+  show_recipes()
+
+def delete_recipes():
+  selected = recipes_list.curselection()
+  if selected:
+      recipe = recipes_list.get(selected[0])
+  cursor.execute("DELETE FROM receitas WHERE dish_name=?", (recipe,))
+  conn.commit()
+  show_recipes()
