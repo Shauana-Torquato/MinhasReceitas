@@ -25,3 +25,10 @@
   <li>possibilitar análise de quais receitas mais utilizadas e menos utilizadas</li></br>
   <li>inserção de imagens e vídeos</li></br>
 </ol></p>
+</br>
+<p>ONGOING</p></br>
+<p>
+<ol>
+  <li>Refazer em Inglês - Rewrite the code in English with the purpose of practice basic code skills</li></br>
+</ol></p>
+</br>
