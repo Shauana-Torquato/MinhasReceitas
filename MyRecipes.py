@@ -24,7 +24,7 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS recipes
                 reference TEXT,
                 rate INTERGER,
                 ingredients TEXT,
-                prepare TEXT)''')
+                preparation TEXT)''')
 conn.commit()
 
 #interaction with the databank
@@ -36,3 +36,20 @@ def show_recipes():
   ordered_recipes = sorted (results, key = lambda x: x[1])
   for receipes in ordered_receipes:
       recipes_list.insert(tk.END, f"{recipe [1]}")
+
+def initialize():
+  show_recipes()
+
+def add_recipes():
+  dish_name = enter_dish_name.get()
+  origin = enter_origin.get()
+  type = enter_type.get()
+  time_hours = enter_time_hours.get()
+  reference = enter_reference.get()
+  rate = enter_rate.get()
+  ingredients = enter_ingredients.get()
+  preparation = enter_preparation.get()
+  cursor.execute("INSERT INTO recipes (dish_name, origin, type, time_hours, reference, rate, ingredients, preparation) VALUES (?,?,?,?,?,?,?,?)",
+                  (dish_name, origin, type, time_hours, reference, rate, ingredients, preparation))
+  conn.commit()
+  show_recipes
