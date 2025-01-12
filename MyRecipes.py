@@ -12,3 +12,17 @@ from tkinter import ttk;
 
 conn = sqlite3.connect('recipes.db')
 cursosr = conn.cursor()
+
+#Creation of a table with the desired info
+
+cursor.execute('''CREATE TABLE IF NOT EXISTS recipes
+                (id INTERGER PRIMARY KEY AUTOINCREMETN, 
+                dish_name TEXT,
+                origin TEXT,
+                type TEXT,
+                time_hours INTERGER,
+                reference TEXT,
+                rate INTERGER,
+                ingredients TEXT,
+                prepare TEXT)''')
+conn.commit()
