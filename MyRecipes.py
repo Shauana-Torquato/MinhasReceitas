@@ -88,7 +88,7 @@ def edit_recipes():
   cursor.execute("DELETE FROM recipes WHERE dish_name=?", (recipe,))
   conn.commit()
   show_recipes()
-      
-      
-      
-      
+
+def search_recipes():
+    word_research = search_dish_name.get()
+  
