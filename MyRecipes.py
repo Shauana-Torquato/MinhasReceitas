@@ -66,4 +66,16 @@ def edit_recipes():
   select = recipes_list.curselection()
   if selected:
       recipe = recipes_list.get(selected[0])
-  cursor.execute("SELECT * FROM recipes WHERE dish_name")
+  cursor.execute("SELECT * FROM recipes WHERE dish_name=?", (recipe,))
+  result = cursor.fetchone()
+  if result:
+      enter_dish_name.delete(0, tk.END)
+      enter_dish_name.insert(0, result[1])
+      enter_origin.delete(0, tk.END)
+      enter_origin.insert(0, result[2])
+      enter_type.delete(0, tk.END)
+      enter_type.insert(0, result[3])
+      enter_time_hours
+      enter_time_hours
+      
+      
