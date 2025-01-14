@@ -91,4 +91,9 @@ def edit_recipes():
 
 def search_recipes():
     word_research = search_dish_name.get()
+    cursor.execute("SELECT * FROM recipes WHERE dish_name LIKE ?", ('%'+word_research+'%',))
+    results = cursor.fetchall()
+    list_recipes.delete(0, tk.END)
+    for recipes in results:
+      list_recipes.insert(tk.END, f"{recipe[1]}")
   
