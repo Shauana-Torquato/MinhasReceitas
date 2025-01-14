@@ -97,3 +97,26 @@ def search_recipes():
     for recipes in results:
       list_recipes.insert(tk.END, f"{recipe[1]}")
   
+#graphic interface
+
+window = tk.TK()
+window.title("My Recipes")
+
+window.configure(bg="#FFFAFA")
+
+frame = tk.Frame(window)
+frame.grid(sticky="nsew",padx=10, pady=10)
+frame.configure(bg="#FFFAFA")
+
+frame_search = tk.Frame(window)
+frame_search.grid(sticky="nw",  padx=10, pady=10)
+frame_search.configure(bg="#FFFAFA")
+
+frame_btm = tk.Frame(window)
+frame_btm.grid(sticky="sw", padx=10, pady=10)
+frame_btm.configure(bg="#FFFAFA")
+
+frame_lista = tk.Frame(window)
+frame_lista.grid(sticky="nsew", padx=10, pady=10)
+frame_lista.configure(bg="#FFFAFA")
+
