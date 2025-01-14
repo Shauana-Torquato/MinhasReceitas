@@ -75,7 +75,17 @@ def edit_recipes():
       enter_origin.insert(0, result[2])
       enter_type.delete(0, tk.END)
       enter_type.insert(0, result[3])
-      enter_time_hours
-      enter_time_hours
+      enter_time_hours.delete(0, tk.END)
+      enter_time_hours.insert(0, result[4])
+      enter_reference.delete(0, tk.END)
+      enter_reference.insert(0, result[5])
+      enter_rate.delete(0, tk.END)
+      enter_rate.insert(0, result[6])
+      enter_ingredients.delete(0, tk.END)
+      enter_ingredients.insert(0, result[7])
+      enter_preparation.delete(0, tk.END)
+      enter_preparation.insert(0, result[8])
+      
+      
       
       
