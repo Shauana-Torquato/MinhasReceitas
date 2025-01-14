@@ -58,6 +58,12 @@ def delete_recipes():
   selected = recipes_list.curselection()
   if selected:
       recipe = recipes_list.get(selected[0])
-  cursor.execute("DELETE FROM receitas WHERE dish_name=?", (recipe,))
+  cursor.execute("DELETE FROM recipes WHERE dish_name=?", (recipe,))
   conn.commit()
   show_recipes()
+
+def edit_recipes():
+  select = recipes_list.curselection()
+  if selected:
+      recipe = recipes_list.get(selected[0])
+  cursor.execute("SELECT * FROM recipes WHERE dish_name")
