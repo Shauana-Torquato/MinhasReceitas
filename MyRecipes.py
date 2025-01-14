@@ -85,6 +85,9 @@ def edit_recipes():
       enter_ingredients.insert(0, result[7])
       enter_preparation.delete(0, tk.END)
       enter_preparation.insert(0, result[8])
+  cursor.execute("DELETE FROM recipes WHERE dish_name=?", (recipe,))
+  conn.commit()
+  show_recipes()
       
       
       
