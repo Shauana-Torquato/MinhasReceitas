@@ -120,3 +120,6 @@ frame_lista = tk.Frame(window)
 frame_lista.grid(sticky="nsew", padx=10, pady=10)
 frame_lista.configure(bg="#FFFAFA")
 
+#research box
+
+
