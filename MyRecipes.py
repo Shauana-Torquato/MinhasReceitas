@@ -167,3 +167,9 @@ enter_rate = tk.Entry(frame, width=110)
 
 label_rate.grid(row=6, column=0, sticky="w")
 enter_rate.grid(row=6, column=1)
+
+label_ingredients = tk.Label(frame, text="Ingredients: ", font=("Helvetica", 12, "italic"), fg="black", bg="#FFFAFA", padx=10, pady=15)
+enter_ingredients = tk.Entry(frame, width=110)
+
+label_ingredients.grid(row=7, column=0, sticky="w")
+enter_ingredients.grid(row=7, column=1)
