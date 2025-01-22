@@ -138,3 +138,8 @@ enter_dish_name = tk.Entry(frame, width=110)
 label_dish_name.grid(row=1, column=0, sticky="w")
 enter_dish_name.grid(row=1, column=1)
 
+label_origin = tk.Label(frame, text= "This dish is originally from: ", font=("Helvetica", 12, "italic"), fg="black",bg="#FFFAFA", padx=10, pady=15)
+enter_origin = tk.Entry(frame, width=110)
+
+label_origin.grid(row=2, column=0, sticky="w")
+enter_origin.grid(row=2, column=1)
