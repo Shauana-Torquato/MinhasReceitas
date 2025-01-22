@@ -155,3 +155,9 @@ enter_time_hours = tk.Entry(frame, width=110)
 
 label_time_hours.grid(row=4, column=0, sticky="w")
 enter_time_hours.grid(row=4, column=1)
+
+label_reference = tk.Label(frame, text="Page, WebSite or Photo of reference: ", font=("Helvetica", 12, "italic"), fg="black", bg="#FFFAFA", padx=10, pady=15)
+enter_reference = tk.Entry(frame, width=110)
+
+label_reference.grid(row=5, column=0, sticky="w")
+enter_reference.grid(row=5, column=1)
