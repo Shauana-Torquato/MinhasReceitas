@@ -121,5 +121,12 @@ frame_lista.grid(sticky="nsew", padx=10, pady=10)
 frame_lista.configure(bg="#FFFAFA")
 
 #research box
+search_dish_name=ttk.Entry(frame_search, width=50)
+search_dish_name.grid(row=0, column=0, padx=10)
 
+btm_search = ttk.Button(frame_search, text="Search", command=search_receitas)
+btm_search.grid(row=0, column=1, padx=10)
+
+result_label = ttk.Label(frame, wraplength=300)
+result_label.grid()
 
