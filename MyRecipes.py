@@ -173,3 +173,9 @@ enter_ingredients = tk.Entry(frame, width=110)
 
 label_ingredients.grid(row=7, column=0, sticky="w")
 enter_ingredients.grid(row=7, column=1)
+
+label_preparation = tk.Label(frame, text="Preparation: ", font=("Helvetica", 12, "italic"), fg="black", bg="#FFFAFA", padx=10, pady=15)
+enter_preparation = tk.Entry(frame, width=110,)
+
+label_preparation.grid(row=8, column=0, sticky="w")
+enter_preparation.grid(row=8, column=1)
