@@ -161,3 +161,9 @@ enter_reference = tk.Entry(frame, width=110)
 
 label_reference.grid(row=5, column=0, sticky="w")
 enter_reference.grid(row=5, column=1)
+
+label_rate = tk.Label(frame, text="Rate this dish from 0 to 10: ", font=("Helvetica", 12, "italic"), fg="black", bg="#FFFAFA", padx=10, pady=15)
+enter_rate = tk.Entry(frame, width=110)
+
+label_rate.grid(row=6, column=0, sticky="w")
+enter_rate.grid(row=6, column=1)
