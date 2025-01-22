@@ -149,3 +149,9 @@ enter_type = tk.Entry(frame, width=110)
 
 label_type.grid(row=3, column=0, sticky="w")
 enter_type.grid(row=3, column=1)
+
+label_time_hours = tk.Label(frame, text="Total preparing time: ", font=("Helvetica", 12, "italic"), fg="black", bg="#FFFAFA", padx=10, pady=15)
+enter_time_hours = tk.Entry(frame, width=110)
+
+label_time_hours.grid(row=4, column=0, sticky="w")
+enter_time_hours.grid(row=4, column=1)
