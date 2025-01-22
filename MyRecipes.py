@@ -130,3 +130,11 @@ btm_search.grid(row=0, column=1, padx=10)
 result_label = ttk.Label(frame, wraplength=300)
 result_label.grid()
 
+# info entry
+
+label_dish_name = tk.Label(frame, text="Dishe name: ",font=("Helvetica", 12, "italic"), fg="black", bg="#FFFAFA", padx=10, pady=15)
+enter_dish_name = tk.Entry(frame, width=110)
+
+label_dish_name.grid(row=1, column=0, sticky="w")
+enter_dish_name.grid(row=1, column=1)
+
