@@ -143,3 +143,9 @@ enter_origin = tk.Entry(frame, width=110)
 
 label_origin.grid(row=2, column=0, sticky="w")
 enter_origin.grid(row=2, column=1)
+
+label_type = tk.Label(frame, text= "Type of dish: ", font=("Helvetica", 12, "italic"), fg="black", bg="#FFFAFA", padx=10, pady=15)
+enter_type = tk.Entry(frame, width=110)
+
+label_type.grid(row=3, column=0, sticky="w")
+enter_type.grid(row=3, column=1)
