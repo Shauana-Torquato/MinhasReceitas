@@ -206,3 +206,10 @@ def show_recipes_details(event):
     # It creates a new window to show the details
     details_window = tk.Toplevel()
     details_window.title(f"Details of the Recipe: {recipe_name}")
+
+# Association of the click's event to the recipe list
+recipes_list.bind('<<ListboxSelect>>', show_recipes_details)
+initialize()
+window.mainloop()
+
+conn.close()
