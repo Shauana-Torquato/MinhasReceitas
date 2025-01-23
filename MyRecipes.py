@@ -202,3 +202,7 @@ def show_recipes_details(event):
     recipe_name = recipes_list.get(index)
     cursor.execute("SELECT * FROM recipes WHERE dish_name=?", (recipe_name,))
     result = cursor.fetchone()
+
+    # It creates a new window to show the details
+    details_window = tk.Toplevel()
+    details_window.title(f"Details of the Recipe: {recipe_name}")
