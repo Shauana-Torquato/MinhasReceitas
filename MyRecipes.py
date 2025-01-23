@@ -187,3 +187,6 @@ add_button.grid(row=10, column=0, sticky="s", padx=10, pady=30)
 
 edit_button = tk.Button(frame_btm, text="Edit Recipe", command=edit_recipe, fg="#7A2A2A", bg="#D1EAF5")
 edit_button.grid(row=10, column=2, sticky="s", padx=10, pady=30)
+
+delete_button = tk.Button(frame_btm, text="Delete Recipe", command=delete_recipe, fg="#7A2A2A", bg="#D1EAF5")
+delete_button.grid(row=10, column= 4, sticky="s", padx=10, pady=30)
