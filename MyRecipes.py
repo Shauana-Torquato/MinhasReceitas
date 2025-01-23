@@ -195,3 +195,10 @@ delete_button.grid(row=10, column= 4, sticky="s", padx=10, pady=30)
 
 recipes_list = tk.Listbox(frame_lista, bg="#FFA39D", width=150, height= 5)
 recipes_list.grid(row=1, column=1,padx=20, pady=5)
+
+def show_recipes_details(event):
+    """It shows the details of the selected recipe"""
+    index = recipes_list.curselection()[0]
+    recipe_name = recipes_list.get(index)
+    cursor.execute("SELECT * FROM recipes WHERE dish_name=?", (recipe_name,))
+    result = cursor.fetchone()
