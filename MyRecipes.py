@@ -179,3 +179,8 @@ enter_preparation = tk.Entry(frame, width=110,)
 
 label_preparation.grid(row=8, column=0, sticky="w")
 enter_preparation.grid(row=8, column=1)
+
+#buttons
+
+add_button = tk.Button(frame_btm, text = "Add Recipe", command=add_recipe, fg="#7A2A2A", bg="#D1EAF5")
+add_button.grid(row=10, column=0, sticky="s", padx=10, pady=30)
